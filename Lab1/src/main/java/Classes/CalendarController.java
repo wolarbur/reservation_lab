@@ -1,4 +1,4 @@
-package com.example.lab1;
+package Classes;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

@@ -6,6 +6,6 @@ module com.example.lab1 {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.lab1 to javafx.fxml;
-    exports com.example.lab1;
+    opens Classes to javafx.fxml;
+    exports Classes;
 }
