@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Classes.CalendarController">
+  <tabs>
+    <Tab text="Booking">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.5130111524163569" prefHeight="579.0" prefWidth="809.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <DatePicker fx:id="myDatePicker" layoutX="80.0" layoutY="75.0" prefHeight="47.0" prefWidth="252.0" />
+                              <Button layoutX="120.0" layoutY="315.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Add reservation" />
+                              <Button layoutX="120.0" layoutY="365.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Modify reservation" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="516.0" prefWidth="435.0">
+                           <children>
+                              <ListView fx:id="roomListView" layoutX="14.0" layoutY="31.0" prefHeight="506.0" prefWidth="353.0" />
+                              <Label layoutX="14.0" layoutY="14.0" text="Rooms available" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Manage">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
