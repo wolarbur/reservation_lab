@@ -34,12 +34,7 @@ public class CalendarController implements Initializable{
     ObservableList<Reservation> resList = FXCollections.observableArrayList(
             new Reservation("John Doe", "yes", 5),
             new Reservation("Alex Smith", "yes", 4)
-
     );
-
-
-
-
 
 
     @Override
@@ -48,11 +43,17 @@ public class CalendarController implements Initializable{
         nameColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("Name"));
         statusColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("BookStatus"));
         sizeColumn.setCellValueFactory(new PropertyValueFactory<Reservation, Integer>("RoomSize"));
+        //test addReservation
+        addReservation("Rith Douche","Yes",5);
 
         roomTable.setItems(resList);
 
-
-
+    }
+    public void addReservation(String name, String isBook, int partySize )
+    {
+        Reservation y = new Reservation(name,isBook,partySize);
+        resList.add(y);
 
     }
+
 }

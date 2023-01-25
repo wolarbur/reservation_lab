@@ -1,9 +1,15 @@
 package Classes;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 public class Reservation {
     private String roomName;
     private String isBooked;
-    private int roomSize;
+    private int partySize;
+    private String name;
+
+
 
 
     //Default constructor
@@ -13,7 +19,7 @@ public class Reservation {
     public Reservation(String n, String j, int s){
         this.roomName = n;
         this.isBooked = j;
-        this.roomSize = s;
+        this.partySize = s;
     }
     //Getters
     public String getName(){
@@ -23,7 +29,7 @@ public class Reservation {
         return isBooked;
     }
     public int getRoomSize(){
-        return roomSize;
+        return partySize;
     }
     //Setters
     public void setRoomName(String name) {
@@ -31,13 +37,13 @@ public class Reservation {
     }
     public void setBookStatus(String bookStatus) {this.isBooked = bookStatus;}
     public void setRoomSize(int roomSize) {
-        this.roomSize = roomSize;
+        this.partySize = roomSize;
     }
 
 
-    public void addReservation(){
-
-
+    public Reservation addReservation(){
+        Reservation x = new Reservation("Rith Douche","Yes",2);
+        return x;
     }
 }
 

@@ -16,6 +16,7 @@
                               <DatePicker fx:id="myDatePicker" layoutX="80.0" layoutY="75.0" prefHeight="47.0" prefWidth="252.0" />
                               <Button layoutX="120.0" layoutY="315.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Add reservation" />
                               <Button layoutX="120.0" layoutY="365.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Modify reservation" />
+                              <TextField layoutX="80.0" layoutY="182.0" />
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="516.0" prefWidth="435.0">
