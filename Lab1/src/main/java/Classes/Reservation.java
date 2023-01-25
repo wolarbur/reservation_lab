@@ -2,7 +2,7 @@ package Classes;
 
 public class Reservation {
     private String roomName;
-    private String isBook;
+    private String isBooked;
     private int roomSize;
 
 
@@ -10,9 +10,9 @@ public class Reservation {
     public Reservation(){
     }
     //Constructor
-    public Reservation(String n, int s, String j){
+    public Reservation(String n, String j, int s){
         this.roomName = n;
-        this.isBook = j;
+        this.isBooked = j;
         this.roomSize = s;
     }
     //Getters
@@ -20,7 +20,7 @@ public class Reservation {
         return roomName;
     }
     public String getBookStatus(){
-        return isBook;
+        return isBooked;
     }
     public int getRoomSize(){
         return roomSize;
@@ -30,7 +30,7 @@ public class Reservation {
         this.roomName = roomName;
     }
     public void setBookStatus(String isBook) {
-        this.isBook = isBook;
+        this.isBooked = isBook;
     }
     public void setRoomSize(int roomSize) {
         this.roomSize = roomSize;
@@ -38,6 +38,7 @@ public class Reservation {
 
 
     public void addReservation(){
+
 
     }
 }
