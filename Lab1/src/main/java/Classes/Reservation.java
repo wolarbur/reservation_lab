@@ -26,12 +26,10 @@ public class Reservation {
         return roomSize;
     }
     //Setters
-    public void setRoomName(String roomName) {
+    public void setRoomName(String name) {
         this.roomName = roomName;
     }
-    public void setBookStatus(String isBook) {
-        this.isBooked = isBooked;
-    }
+    public void setBookStatus(String bookStatus) {this.isBooked = bookStatus;}
     public void setRoomSize(int roomSize) {
         this.roomSize = roomSize;
     }

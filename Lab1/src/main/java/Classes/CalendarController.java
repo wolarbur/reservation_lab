@@ -45,9 +45,9 @@ public class CalendarController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //Table for displaying reservation info
-        nameColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("roomName"));
-        statusColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("isBooked"));
-        sizeColumn.setCellValueFactory(new PropertyValueFactory<Reservation, Integer>("roomSize"));
+        nameColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("Name"));
+        statusColumn.setCellValueFactory(new PropertyValueFactory<Reservation, String>("BookStatus"));
+        sizeColumn.setCellValueFactory(new PropertyValueFactory<Reservation, Integer>("RoomSize"));
 
         roomTable.setItems(resList);
 
