@@ -30,7 +30,7 @@ public class Reservation {
         this.roomName = roomName;
     }
     public void setBookStatus(String isBook) {
-        this.isBooked = isBook;
+        this.isBooked = isBooked;
     }
     public void setRoomSize(int roomSize) {
         this.roomSize = roomSize;
