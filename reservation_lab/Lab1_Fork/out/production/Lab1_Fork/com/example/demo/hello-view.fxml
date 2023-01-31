@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="nights" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <DatePicker layoutX="56.0" layoutY="84.0" onAction="#CheckInDate" prefHeight="32.0" prefWidth="243.0" promptText="Please Choose Check-In Date" />
+      <Button layoutX="56.0" layoutY="323.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Button layoutX="259.0" layoutY="323.0" mnemonicParsing="false" onAction="#Add" text="Next" />
+      <DatePicker layoutX="56.0" layoutY="160.0" onAction="#CheckOutDate" prefHeight="32.0" prefWidth="243.0" promptText="Please Choose Check-Out Date" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="32.0" prefWidth="162.0" text="Hotel Reservation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="date1" layoutX="56.0" layoutY="126.0" />
+      <TextField fx:id="date2" layoutX="56.0" layoutY="200.0" />
+   </children>
+</AnchorPane>
